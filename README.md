@@ -1,2 +1,2 @@
 # playwright-api-ds
-Playwright Api Testing
+Playwright Api Automation Testing
