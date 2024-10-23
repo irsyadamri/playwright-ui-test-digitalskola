@@ -62,59 +62,50 @@
   },
   "suites": [
     {
-      "title": "automationtest.spec.js",
-      "file": "automationtest.spec.js",
+      "title": "ui\\test-ui.spec.js",
+      "file": "ui/test-ui.spec.js",
       "column": 0,
       "line": 0,
-      "specs": [],
-      "suites": [
+      "specs": [
         {
-          "title": "Web UI Demo",
-          "file": "automationtest.spec.js",
-          "line": 3,
-          "column": 6,
-          "specs": [
+          "title": "TC-1 Successful login using page object",
+          "ok": true,
+          "tags": [],
+          "tests": [
             {
-              "title": "TC-1 Successful login",
-              "ok": true,
-              "tags": [],
-              "tests": [
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
                 {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "status": "passed",
-                      "duration": 1079,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2024-10-22T09:28:50.174Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 882,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-10-23T09:51:08.023Z",
+                  "attachments": []
                 }
               ],
-              "id": "277127e90cbf68008e1c-76c16935a4a3b2468733",
-              "file": "automationtest.spec.js",
-              "line": 4,
-              "column": 5
+              "status": "expected"
             }
-          ]
+          ],
+          "id": "b9accae95d4ce4395402-c5d6e3212b2a5b2da6e2",
+          "file": "ui/test-ui.spec.js",
+          "line": 6,
+          "column": 1
         }
       ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-10-22T09:28:49.616Z",
-    "duration": 1965.9910000000004,
+    "startTime": "2024-10-23T09:51:07.471Z",
+    "duration": 1776.692,
     "expected": 1,
     "skipped": 0,
     "unexpected": 0,
