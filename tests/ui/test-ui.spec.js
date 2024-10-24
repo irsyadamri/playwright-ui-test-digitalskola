@@ -1,3 +1,4 @@
+const { afterEach } = require("node:test");
 const { test } = require("./base/base-test");
 const { LoginPage } = require("./page-object/login-page");
 
@@ -31,3 +32,9 @@ test.beforeAll(async () => {
 test.beforeEach(async () => {
     console.log("Di eksekusi dari before each - melakukan clean up item di cart")
 });
+
+test.afterEach(async ({ page }, testInfo) => {
+    if (testInfo.status != test.expectStatus) {
+        await page.screenshot({path: 'failde-screenshot.png', })
+    }
+})
