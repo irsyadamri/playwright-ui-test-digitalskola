@@ -1,7 +1,7 @@
 {
   "config": {
-    "configFile": "D:\\Data Semen\\digitalskola\\testclone\\playwright\\playwright-api-ds\\playwright.config.js",
-    "rootDir": "D:/Data Semen/digitalskola/testclone/playwright/playwright-api-ds/tests",
+    "configFile": "D:\\Project\\Digital Skola\\Playwright\\playwright-ui-test-digitalskola\\playwright.config.js",
+    "rootDir": "D:/Project/Digital Skola/Playwright/playwright-ui-test-digitalskola/tests",
     "forbidOnly": false,
     "fullyParallel": true,
     "globalSetup": null,
@@ -40,13 +40,13 @@
     "quiet": false,
     "projects": [
       {
-        "outputDir": "D:/Data Semen/digitalskola/testclone/playwright/playwright-api-ds/test-results",
+        "outputDir": "D:/Project/Digital Skola/Playwright/playwright-ui-test-digitalskola/test-results",
         "repeatEach": 1,
         "retries": 0,
         "metadata": {},
         "id": "chromium",
         "name": "chromium",
-        "testDir": "D:/Data Semen/digitalskola/testclone/playwright/playwright-api-ds/tests",
+        "testDir": "D:/Project/Digital Skola/Playwright/playwright-ui-test-digitalskola/tests",
         "testIgnore": [],
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
@@ -82,7 +82,7 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 4590,
+                  "duration": 1538,
                   "errors": [],
                   "stdout": [
                     {
@@ -94,7 +94,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-10-24T09:15:17.013Z",
+                  "startTime": "2024-10-24T14:57:24.980Z",
                   "attachments": []
                 }
               ],
@@ -103,7 +103,7 @@
           ],
           "id": "b9accae95d4ce4395402-5c723ba83255940bc35d",
           "file": "ui/test-ui.spec.js",
-          "line": 3,
+          "line": 4,
           "column": 1
         },
         {
@@ -121,7 +121,7 @@
                 {
                   "workerIndex": 1,
                   "status": "passed",
-                  "duration": 4513,
+                  "duration": 1570,
                   "errors": [],
                   "stdout": [
                     {
@@ -133,7 +133,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-10-24T09:15:17.015Z",
+                  "startTime": "2024-10-24T14:57:24.983Z",
                   "attachments": []
                 }
               ],
@@ -142,7 +142,7 @@
           ],
           "id": "b9accae95d4ce4395402-c40de171bbe02ecf6706",
           "file": "ui/test-ui.spec.js",
-          "line": 14,
+          "line": 15,
           "column": 1
         }
       ]
@@ -150,8 +150,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-10-24T09:15:16.378Z",
-    "duration": 5608.693,
+    "startTime": "2024-10-24T14:57:24.309Z",
+    "duration": 2696.093,
     "expected": 2,
     "skipped": 0,
     "unexpected": 0,

@@ -1,4 +1,5 @@
 const { test } = require("./base/base-test");
+const { LoginPage } = require("./page-object/login-page");
 
 test('TC-1 Successful login using page object - standard user', async ({ LoginPage, DashboardPage, CartPage }) => {
 
@@ -30,4 +31,3 @@ test.beforeAll(async () => {
 test.beforeEach(async () => {
     console.log("Di eksekusi dari before each - melakukan clean up item di cart")
 });
-
