@@ -1,7 +1,7 @@
 {
   "config": {
-    "configFile": "D:\\Data Semen\\digitalskola\\testclone\\playwright\\playwright-api-ds\\playwright.config.js",
-    "rootDir": "D:/Data Semen/digitalskola/testclone/playwright/playwright-api-ds/tests",
+    "configFile": "D:\\Project\\Digital Skola\\Playwright\\playwright-ui-test-digitalskola\\playwright.config.js",
+    "rootDir": "D:/Project/Digital Skola/Playwright/playwright-ui-test-digitalskola/tests",
     "forbidOnly": false,
     "fullyParallel": true,
     "globalSetup": null,
@@ -10,9 +10,7 @@
     "grep": {},
     "grepInvert": null,
     "maxFailures": 0,
-    "metadata": {
-      "actualWorkers": 1
-    },
+    "metadata": {},
     "preserveOutput": "always",
     "reporter": [
       [
@@ -40,13 +38,13 @@
     "quiet": false,
     "projects": [
       {
-        "outputDir": "D:/Data Semen/digitalskola/testclone/playwright/playwright-api-ds/test-results",
+        "outputDir": "D:/Project/Digital Skola/Playwright/playwright-ui-test-digitalskola/test-results",
         "repeatEach": 1,
         "retries": 0,
         "metadata": {},
         "id": "chromium",
         "name": "chromium",
-        "testDir": "D:/Data Semen/digitalskola/testclone/playwright/playwright-api-ds/tests",
+        "testDir": "D:/Project/Digital Skola/Playwright/playwright-ui-test-digitalskola/tests",
         "testIgnore": [],
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
@@ -60,53 +58,17 @@
     "workers": 6,
     "webServer": null
   },
-  "suites": [
+  "suites": [],
+  "errors": [
     {
-      "title": "ui\\test-ui.spec.js",
-      "file": "ui/test-ui.spec.js",
-      "column": 0,
-      "line": 0,
-      "specs": [
-        {
-          "title": "TC-1 Successful login using page object",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "status": "passed",
-                  "duration": 882,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2024-10-23T09:51:08.023Z",
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "b9accae95d4ce4395402-c5d6e3212b2a5b2da6e2",
-          "file": "ui/test-ui.spec.js",
-          "line": 6,
-          "column": 1
-        }
-      ]
+      "message": "Error: No tests found.\nMake sure that arguments are regular expressions matching test files.\nYou may need to escape symbols like \"$\" or \"*\" and quote the arguments.",
+      "stack": "Error: No tests found.\nMake sure that arguments are regular expressions matching test files.\nYou may need to escape symbols like \"$\" or \"*\" and quote the arguments."
     }
   ],
-  "errors": [],
   "stats": {
-    "startTime": "2024-10-23T09:51:07.471Z",
-    "duration": 1776.692,
-    "expected": 1,
+    "startTime": "2024-10-24T14:02:49.314Z",
+    "duration": 10.015999999999963,
+    "expected": 0,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0
