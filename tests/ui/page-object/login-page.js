@@ -1,3 +1,5 @@
+import { expect } from "playwright/test";
+
 export class LoginPage {
  
     constructor(page) {
@@ -9,6 +11,7 @@ export class LoginPage {
 
     async navigate() {
       await this.page.goto("https://www.saucedemo.com/");
+      await expect(this.page).toHaveScreenshot('login-page.png')
    }
 
     async inputusername(username) {

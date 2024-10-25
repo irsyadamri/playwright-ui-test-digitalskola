@@ -3,6 +3,7 @@ const { expect } = require("@playwright/test");
 export class DashboardPage {
 
     constructor(page){
+        this.page = page
         this.pageTitle = page.getByText('Swag Labs');
         this.menuButton = page.getByRole('button', {name: 'Open Menu'})
 
@@ -19,8 +20,9 @@ export class DashboardPage {
 
 ///Data diatasnya adalah variabelnya
     async validateOnPage(){
-        expect(this.pageTitle).toBeVisible()
-        expect(this.menuButton).toBeVisible()
+       await expect(this.pageTitle).toBeVisible()
+       await expect(this.menuButton).toBeVisible()
+       await expect(this.page).toHaveScreenshot('dashboard-page.png' , {maxDiffPixelRatio: 0.5})
     }
 
     async clickbtnAddToCart() {

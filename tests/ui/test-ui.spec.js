@@ -13,7 +13,7 @@ test('TC-1 Successful login using page object - standard user', async ({ LoginPa
     await CartPage.validateOnCarticon()
 });
 
-test('TC-2 Successful login using page object - visual user', async ({ LoginPage, DashboardPage, CartPage }) => {
+test('TC-2 Successful login using page object - visual user', { tag: ['@smoke']} ,async ({ LoginPage, DashboardPage, CartPage }) => {
     
     await LoginPage.login(process.env.VISUAL_USER, process.env.PASSWORD)
     await DashboardPage.validateOnPage()
@@ -25,16 +25,13 @@ test('TC-2 Successful login using page object - visual user', async ({ LoginPage
 });
 
 
-test.beforeAll(async () => {
-    console.log("Di eksekusi dari before all - melakukan setup test env")
-});
-
-test.beforeEach(async () => {
-    console.log("Di eksekusi dari before each - melakukan clean up item di cart")
-});
-
 test.afterEach(async ({ page }, testInfo) => {
-    if (testInfo.status != test.expectStatus) {
-        await page.screenshot({path: 'failde-screenshot.png', })
+    if (testInfo.status !== testInfo.expectedStatus) {
+        console.log("Test failed, peform screenshot");
+        const image = await page.screenshot({fullPage: true})
+        testInfo.attach('failed test', {
+            body: image,
+            contentType: 'image/png',
+        });
     }
 })

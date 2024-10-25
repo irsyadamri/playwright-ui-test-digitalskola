@@ -1,7 +1,7 @@
 {
   "config": {
-    "configFile": "D:\\Project\\Digital Skola\\Playwright\\playwright-ui-test-digitalskola\\playwright.config.js",
-    "rootDir": "D:/Project/Digital Skola/Playwright/playwright-ui-test-digitalskola/tests",
+    "configFile": "D:\\Data Semen\\digitalskola\\testclone\\playwright\\playwright-api-ds\\playwright.config.js",
+    "rootDir": "D:/Data Semen/digitalskola/testclone/playwright/playwright-api-ds/tests",
     "forbidOnly": false,
     "fullyParallel": true,
     "globalSetup": null,
@@ -40,13 +40,13 @@
     "quiet": false,
     "projects": [
       {
-        "outputDir": "D:/Project/Digital Skola/Playwright/playwright-ui-test-digitalskola/test-results",
+        "outputDir": "D:/Data Semen/digitalskola/testclone/playwright/playwright-api-ds/test-results",
         "repeatEach": 1,
         "retries": 0,
         "metadata": {},
         "id": "chromium",
         "name": "chromium",
-        "testDir": "D:/Project/Digital Skola/Playwright/playwright-ui-test-digitalskola/tests",
+        "testDir": "D:/Data Semen/digitalskola/testclone/playwright/playwright-api-ds/tests",
         "testIgnore": [],
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
@@ -82,19 +82,12 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 1560,
+                  "duration": 1564,
                   "errors": [],
-                  "stdout": [
-                    {
-                      "text": "Di eksekusi dari before all - melakukan setup test env\n"
-                    },
-                    {
-                      "text": "Di eksekusi dari before each - melakukan clean up item di cart\n"
-                    }
-                  ],
+                  "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-10-24T15:05:52.885Z",
+                  "startTime": "2024-10-25T08:30:47.853Z",
                   "attachments": []
                 }
               ],
@@ -103,13 +96,15 @@
           ],
           "id": "b9accae95d4ce4395402-5c723ba83255940bc35d",
           "file": "ui/test-ui.spec.js",
-          "line": 4,
+          "line": 5,
           "column": 1
         },
         {
           "title": "TC-2 Successful login using page object - visual user",
           "ok": true,
-          "tags": [],
+          "tags": [
+            "smoke"
+          ],
           "tests": [
             {
               "timeout": 30000,
@@ -121,19 +116,12 @@
                 {
                   "workerIndex": 1,
                   "status": "passed",
-                  "duration": 1676,
+                  "duration": 1534,
                   "errors": [],
-                  "stdout": [
-                    {
-                      "text": "Di eksekusi dari before all - melakukan setup test env\n"
-                    },
-                    {
-                      "text": "Di eksekusi dari before each - melakukan clean up item di cart\n"
-                    }
-                  ],
+                  "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-10-24T15:05:52.887Z",
+                  "startTime": "2024-10-25T08:30:47.855Z",
                   "attachments": []
                 }
               ],
@@ -142,7 +130,7 @@
           ],
           "id": "b9accae95d4ce4395402-c40de171bbe02ecf6706",
           "file": "ui/test-ui.spec.js",
-          "line": 15,
+          "line": 16,
           "column": 1
         }
       ]
@@ -150,8 +138,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-10-24T15:05:52.305Z",
-    "duration": 2843.9660000000003,
+    "startTime": "2024-10-25T08:30:47.277Z",
+    "duration": 2402.8540000000003,
     "expected": 2,
     "skipped": 0,
     "unexpected": 0,

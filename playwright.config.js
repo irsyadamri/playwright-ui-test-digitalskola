@@ -5,10 +5,16 @@ require('dotenv').config({ path: path.resolve(__dirname, '.env') });
 
 module.exports = defineConfig({
   testDir: './tests',
+  snapshotPathTemplate: 'tests/ui/snapshot/{arg}{ext}',
   fullyParallel: true,
   forbidOnly: !!process.env.CI,
   retries: process.env.CI ? 2 : 0,
   workers: process.env.CI ? 1 : undefined,
+  expect:{
+    toHaveScreenshot: {
+      maxDiffPixelRatio: 0.5
+    }
+  },
   reporter: [
     ['list'],
     ['json', { outputFile: 'report/json/report.json' }],
