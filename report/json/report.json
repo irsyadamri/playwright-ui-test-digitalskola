@@ -11,7 +11,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "actualWorkers": 2
+      "actualWorkers": 4
     },
     "preserveOutput": "always",
     "reporter": [
@@ -44,8 +44,50 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {},
-        "id": "chromium",
-        "name": "chromium",
+        "id": "desktop-smoke-test-chrome",
+        "name": "desktop-smoke-test-chrome",
+        "testDir": "D:/Data Semen/digitalskola/testclone/playwright/playwright-api-ds/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "D:/Data Semen/digitalskola/testclone/playwright/playwright-api-ds/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "desktop-smoke-test-edge",
+        "name": "desktop-smoke-test-edge",
+        "testDir": "D:/Data Semen/digitalskola/testclone/playwright/playwright-api-ds/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "D:/Data Semen/digitalskola/testclone/playwright/playwright-api-ds/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "desktop-smoke-test-Firefox",
+        "name": "desktop-smoke-test-Firefox",
+        "testDir": "D:/Data Semen/digitalskola/testclone/playwright/playwright-api-ds/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "D:/Data Semen/digitalskola/testclone/playwright/playwright-api-ds/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "desktop-API-test-Firefox",
+        "name": "desktop-API-test-Firefox",
         "testDir": "D:/Data Semen/digitalskola/testclone/playwright/playwright-api-ds/tests",
         "testIgnore": [],
         "testMatch": [
@@ -62,85 +104,168 @@
   },
   "suites": [
     {
-      "title": "ui\\test-ui.spec.js",
-      "file": "ui/test-ui.spec.js",
+      "title": "api\\api.spec.js",
+      "file": "api/api.spec.js",
       "column": 0,
       "line": 0,
-      "specs": [
+      "specs": [],
+      "suites": [
         {
-          "title": "TC-1 Successful login using page object - standard user",
-          "ok": true,
-          "tags": [],
-          "tests": [
+          "title": "API Test",
+          "file": "api/api.spec.js",
+          "line": 6,
+          "column": 6,
+          "specs": [
             {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
+              "title": "GET",
+              "ok": true,
+              "tags": [
+                "api"
+              ],
+              "tests": [
                 {
-                  "workerIndex": 0,
-                  "status": "passed",
-                  "duration": 1564,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2024-10-25T08:30:47.853Z",
-                  "attachments": []
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-API-test-Firefox",
+                  "projectName": "desktop-API-test-Firefox",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 679,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "{\n  page: \u001b[33m2\u001b[39m,\n  per_page: \u001b[33m6\u001b[39m,\n  total: \u001b[33m12\u001b[39m,\n  total_pages: \u001b[33m2\u001b[39m,\n  data: [\n    {\n      id: \u001b[33m7\u001b[39m,\n      email: \u001b[32m'michael.lawson@reqres.in'\u001b[39m,\n      first_name: \u001b[32m'Michael'\u001b[39m,\n      last_name: \u001b[32m'Lawson'\u001b[39m,\n      avatar: \u001b[32m'https://reqres.in/img/faces/7-image.jpg'\u001b[39m\n    },\n    {\n      id: \u001b[33m8\u001b[39m,\n      email: \u001b[32m'lindsay.ferguson@reqres.in'\u001b[39m,\n      first_name: \u001b[32m'Lindsay'\u001b[39m,\n      last_name: \u001b[32m'Ferguson'\u001b[39m,\n      avatar: \u001b[32m'https://reqres.in/img/faces/8-image.jpg'\u001b[39m\n    },\n    {\n      id: \u001b[33m9\u001b[39m,\n      email: \u001b[32m'tobias.funke@reqres.in'\u001b[39m,\n      first_name: \u001b[32m'Tobias'\u001b[39m,\n      last_name: \u001b[32m'Funke'\u001b[39m,\n      avatar: \u001b[32m'https://reqres.in/img/faces/9-image.jpg'\u001b[39m\n    },\n    {\n      id: \u001b[33m10\u001b[39m,\n      email: \u001b[32m'byron.fields@reqres.in'\u001b[39m,\n      first_name: \u001b[32m'Byron'\u001b[39m,\n      last_name: \u001b[32m'Fields'\u001b[39m,\n      avatar: \u001b[32m'https://reqres.in/img/faces/10-image.jpg'\u001b[39m\n    },\n    {\n      id: \u001b[33m11\u001b[39m,\n      email: \u001b[32m'george.edwards@reqres.in'\u001b[39m,\n      first_name: \u001b[32m'George'\u001b[39m,\n      last_name: \u001b[32m'Edwards'\u001b[39m,\n      avatar: \u001b[32m'https://reqres.in/img/faces/11-image.jpg'\u001b[39m\n    },\n    {\n      id: \u001b[33m12\u001b[39m,\n      email: \u001b[32m'rachel.howell@reqres.in'\u001b[39m,\n      first_name: \u001b[32m'Rachel'\u001b[39m,\n      last_name: \u001b[32m'Howell'\u001b[39m,\n      avatar: \u001b[32m'https://reqres.in/img/faces/12-image.jpg'\u001b[39m\n    }\n  ],\n  support: {\n    url: \u001b[32m'https://reqres.in/#support-heading'\u001b[39m,\n    text: \u001b[32m'To keep ReqRes free, contributions towards server costs are appreciated!'\u001b[39m\n  }\n}\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-11-01T02:47:52.610Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
                 }
               ],
-              "status": "expected"
-            }
-          ],
-          "id": "b9accae95d4ce4395402-5c723ba83255940bc35d",
-          "file": "ui/test-ui.spec.js",
-          "line": 5,
-          "column": 1
-        },
-        {
-          "title": "TC-2 Successful login using page object - visual user",
-          "ok": true,
-          "tags": [
-            "smoke"
-          ],
-          "tests": [
+              "id": "48d5d3ff699f7b4a48ad-3b21adf0caf8654bc6bd",
+              "file": "api/api.spec.js",
+              "line": 8,
+              "column": 5
+            },
             {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
+              "title": "POST",
+              "ok": true,
+              "tags": [
+                "api"
+              ],
+              "tests": [
                 {
-                  "workerIndex": 1,
-                  "status": "passed",
-                  "duration": 1534,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2024-10-25T08:30:47.855Z",
-                  "attachments": []
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-API-test-Firefox",
+                  "projectName": "desktop-API-test-Firefox",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "status": "passed",
+                      "duration": 717,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-11-01T02:47:52.620Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
                 }
               ],
-              "status": "expected"
+              "id": "48d5d3ff699f7b4a48ad-9b17ceb0dce6ea0ec355",
+              "file": "api/api.spec.js",
+              "line": 16,
+              "column": 6
+            },
+            {
+              "title": "PUT",
+              "ok": true,
+              "tags": [
+                "api"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-API-test-Firefox",
+                  "projectName": "desktop-API-test-Firefox",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "status": "passed",
+                      "duration": 734,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-11-01T02:47:52.606Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "48d5d3ff699f7b4a48ad-0de608b174c660311c4c",
+              "file": "api/api.spec.js",
+              "line": 50,
+              "column": 6
+            },
+            {
+              "title": "DELETE",
+              "ok": true,
+              "tags": [
+                "api"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-API-test-Firefox",
+                  "projectName": "desktop-API-test-Firefox",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "status": "passed",
+                      "duration": 653,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-11-01T02:47:52.625Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "48d5d3ff699f7b4a48ad-d9a019d418d3f8778d91",
+              "file": "api/api.spec.js",
+              "line": 84,
+              "column": 6
             }
-          ],
-          "id": "b9accae95d4ce4395402-c40de171bbe02ecf6706",
-          "file": "ui/test-ui.spec.js",
-          "line": 16,
-          "column": 1
+          ]
         }
       ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-10-25T08:30:47.277Z",
-    "duration": 2402.8540000000003,
-    "expected": 2,
+    "startTime": "2024-11-01T02:47:51.815Z",
+    "duration": 1555.8849999999998,
+    "expected": 4,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0

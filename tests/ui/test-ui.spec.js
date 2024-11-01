@@ -2,7 +2,7 @@ const { afterEach } = require("node:test");
 const { test } = require("./base/base-test");
 const { LoginPage } = require("./page-object/login-page");
 
-test('TC-1 Successful login using page object - standard user', async ({ LoginPage, DashboardPage, CartPage }) => {
+test('TC-1 Successful login using page object - standard user' , { tag: ['@smoke']} , async ({ LoginPage, DashboardPage, CartPage }) => {
 
     await LoginPage.login(process.env.STANDARD_USER, process.env.PASSWORD)
     await DashboardPage.validateOnPage()
